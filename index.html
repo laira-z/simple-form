@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Tela de login</h1>
+      <form class="container" id="formlogin" action="">
+        <fieldset>
+          <legend>Insira seus dados para realizar o login</legend>
+
+          <label for="fname">Nome:</label>
+          <input
+            type="text"
+            name="fistname"
+            id="fname"
+            placeholder="Insira seu nome"
+            autofocus
+          />
+
+          <label for="lname">Sobrenome:</label>
+          <input
+            type="text"
+            name="lastname"
+            id="lname"
+            placeholder="Insira seu sobrenome"
+          />
+
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" placeholder="Seu email" />
+
+          <label for="gender">Genero:</label>
+          <input type="radio" name="gender" id="male" value="male" />
+          <label for="male">Masculino</label>
+          <input type="radio" id="female" name="gender" value="female" />
+          <label for="female">Femenino</label><br /><br />
+          <input type="submit" value="Enviar" />
+          <input type="button" name="limpar" id="limpar" value="Limpar" />
+        </fieldset>
+        <footer></footer>
+      </form>
+      <div id="dados-formulario"></div>
+    </main>
+    <script src="./dados.js"></script>
+  </body>
+</html>
